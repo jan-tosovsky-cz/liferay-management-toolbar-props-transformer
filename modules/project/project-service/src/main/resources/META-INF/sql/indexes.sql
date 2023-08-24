@@ -1,0 +1,1 @@
+create unique index IX_D2070FD8 on project_Project (name[$COLUMN_LENGTH:75$]);

@@ -1,0 +1,9 @@
+Bundle-SymbolicName: my.project.api
+Bundle-Version: 1.0.0
+Export-Package: \
+    my.project.exception,\
+    my.project.model,\
+    my.project.service,\
+    my.project.service.persistence,\
+    my.project.util,\
+    my.project.util.search

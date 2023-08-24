@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "frontend-js-web": "*"
+  },
+  "name": "project-admin-web",
+  "scripts": {
+    "build": "liferay-npm-scripts build",
+    "checkFormat": "liferay-npm-scripts check",
+    "format": "liferay-npm-scripts fix"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "@liferay/npm-scripts": "^47.18.0"
+  }
+}

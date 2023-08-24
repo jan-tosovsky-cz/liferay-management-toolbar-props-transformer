@@ -1,0 +1,13 @@
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+	compileOnly project(":modules:project:project-api")
+}
+
+jar {
+	doFirst{
+		copy {
+			from layout.buildDirectory.dir("node/packageRunBuild")
+			into layout.buildDirectory.dir("resources/main/META-INF")
+		}
+	}
+}
