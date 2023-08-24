@@ -7,11 +7,12 @@ Liferay Javascript module, which helps to keep the visual uniformity with the re
 
 ## Things that must be done in your project
 1. In `gradle.properties` set `liferay.workspace.node.package.manager=npm`.
-2. Add `npmscripts.config.js` to your `-web` module. That used in this example imports all `frontend-js-web` modules.
-3. Add `package.json` to your `-web` module. That used in this example has `frontend-js-web` dependency.
-4. Into `build.gradle` in your `-web` module copy the `jar` section from this example. It ensures your JavaScript files are bundled properly.
-5. Ensure all PropsTransformers have the correct syntax.
-6. Ensure all PropTransformers are referenced properly.
+2. Copy `yarn.lock` to the `modules` folder. It ensures proper resolving some relative paths.
+3. Add `npmscripts.config.js` to your `-web` module. That used in this example imports all `frontend-js-web` modules.
+4. Add `package.json` to your `-web` module. That used in this example has `frontend-js-web` dependency.
+5. Into `build.gradle` in your `-web` module copy the `jar` section from this example. It ensures your JavaScript files are bundled properly.
+6. Ensure all PropsTransformers have the correct syntax.
+7. Ensure all PropTransformers are referenced properly.
 
 ### Caveat
 PropTransformers is a non-public (i.e. not supported) technology intended for internal use solely 
